@@ -9,7 +9,7 @@ def input_word() -> str:
     if len(word) != 5:
         print("Error: Word must contain 5 characters.")
         exit()
-    return word
+    return word  # returns a five letter word from local variable word
 
 
 def input_letter() -> str:
@@ -18,7 +18,7 @@ def input_letter() -> str:
     if len(letter) != 1:
         print("Error: Character must be a single character.")
         exit()
-    return letter
+    return letter  # returns a single character from local variable
 
 
 def contains_char(word: str, letter: str) -> None:
@@ -48,10 +48,16 @@ def contains_char(word: str, letter: str) -> None:
         print(str(count) + " instances of " + letter + " found in " + word)
 
 
+# checking each letter and noting down instances with a final print
+# of how many found
+
+
 def main() -> None:
     """main function to centralize other functions"""
-    contains_char(word=input_word(), letter=input_letter())
+    contains_char(
+        word=input_word(), letter=input_letter()
+    )  # keeps the other functions in a main function
 
 
 if __name__ == "__main__":
-    main()
+    main()  # keeps main function for library and will call the function
