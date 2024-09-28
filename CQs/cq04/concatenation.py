@@ -4,10 +4,9 @@ __author__ = "730740674"
 
 
 def concat(strinput1: str, strinput2: str) -> str:
-    return strinput1 + strinput2
+    """adds two strings together"""
+    return strinput1 + strinput2  # returns the result of adding two strings
 
-
-# returns the result of adding two strings
 
 word1: str = "happy"
 word2: str = "tuesday"
